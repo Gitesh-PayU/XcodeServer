@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import SD
-//import SDWebImage
+import SDWebImage
 
 class ViewController: UIViewController {
     
