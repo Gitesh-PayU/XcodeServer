@@ -14,7 +14,18 @@
 		FE01D337216F5DA1001926E1 /* XcodeServer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE01D335216F5DA1001926E1 /* XcodeServer.xcdatamodeld */; };
 		FE01D339216F5DA3001926E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE01D338216F5DA3001926E1 /* Assets.xcassets */; };
 		FE01D33C216F5DA3001926E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE01D33A216F5DA3001926E1 /* LaunchScreen.storyboard */; };
+		FEEAEC382173B5A10083F229 /* XcodeServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEAEC372173B5A10083F229 /* XcodeServerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEEAEC3A2173B5A10083F229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE01D323216F5DA1001926E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE01D32A216F5DA1001926E1;
+			remoteInfo = XcodeServer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24B361EA802607C3C65C81FF /* Pods-XcodeServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-XcodeServer/Pods-XcodeServer.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +39,9 @@
 		FE01D338216F5DA3001926E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE01D33B216F5DA3001926E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE01D33D216F5DA3001926E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEEAEC352173B5A10083F229 /* XcodeServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEAEC372173B5A10083F229 /* XcodeServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeServerTests.swift; sourceTree = "<group>"; };
+		FEEAEC392173B5A10083F229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13968DD40E1C43239B0EC1C0 /* Pods_XcodeServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEAEC322173B5A10083F229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FE01D32D216F5DA1001926E1 /* XcodeServer */,
+				FEEAEC362173B5A10083F229 /* XcodeServerTests */,
 				FE01D32C216F5DA1001926E1 /* Products */,
 				54CC65441975A70EE1989017 /* Pods */,
 				D452FB92887D6C2E87FCDC1D /* Frameworks */,
@@ -73,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FE01D32B216F5DA1001926E1 /* XcodeServer.app */,
+				FEEAEC352173B5A10083F229 /* XcodeServerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +112,15 @@
 				FE01D335216F5DA1001926E1 /* XcodeServer.xcdatamodeld */,
 			);
 			path = XcodeServer;
+			sourceTree = "<group>";
+		};
+		FEEAEC362173B5A10083F229 /* XcodeServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEEAEC372173B5A10083F229 /* XcodeServerTests.swift */,
+				FEEAEC392173B5A10083F229 /* Info.plist */,
+			);
+			path = XcodeServerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +145,24 @@
 			productReference = FE01D32B216F5DA1001926E1 /* XcodeServer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FEEAEC342173B5A10083F229 /* XcodeServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEAEC3C2173B5A10083F229 /* Build configuration list for PBXNativeTarget "XcodeServerTests" */;
+			buildPhases = (
+				FEEAEC312173B5A10083F229 /* Sources */,
+				FEEAEC322173B5A10083F229 /* Frameworks */,
+				FEEAEC332173B5A10083F229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEAEC3B2173B5A10083F229 /* PBXTargetDependency */,
+			);
+			name = XcodeServerTests;
+			productName = XcodeServerTests;
+			productReference = FEEAEC352173B5A10083F229 /* XcodeServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -125,6 +175,10 @@
 				TargetAttributes = {
 					FE01D32A216F5DA1001926E1 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					FEEAEC342173B5A10083F229 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FE01D32A216F5DA1001926E1;
 					};
 				};
 			};
@@ -142,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				FE01D32A216F5DA1001926E1 /* XcodeServer */,
+				FEEAEC342173B5A10083F229 /* XcodeServerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +209,13 @@
 				FE01D33C216F5DA3001926E1 /* LaunchScreen.storyboard in Resources */,
 				FE01D339216F5DA3001926E1 /* Assets.xcassets in Resources */,
 				FE01D334216F5DA1001926E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEAEC332173B5A10083F229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +279,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEEAEC312173B5A10083F229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEAEC382173B5A10083F229 /* XcodeServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEEAEC3B2173B5A10083F229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE01D32A216F5DA1001926E1 /* XcodeServer */;
+			targetProxy = FEEAEC3A2173B5A10083F229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FE01D332216F5DA1001926E1 /* Main.storyboard */ = {
@@ -360,8 +438,8 @@
 			baseConfigurationReference = D8DDD8F422D55ED27F7CC794 /* Pods-XcodeServer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S3VU778P8V;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				INFOPLIST_FILE = XcodeServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,6 +447,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.payu.XcodeServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Gitesh PayU Wildcard";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,8 +458,8 @@
 			baseConfigurationReference = 24B361EA802607C3C65C81FF /* Pods-XcodeServer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S3VU778P8V;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				INFOPLIST_FILE = XcodeServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,8 +467,53 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.payu.XcodeServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Gitesh PayU Wildcard";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEEAEC3D2173B5A10083F229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3T2M5UN5C5;
+				INFOPLIST_FILE = XcodeServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.payu.XcodeServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeServer.app/XcodeServer";
+			};
+			name = Debug;
+		};
+		FEEAEC3E2173B5A10083F229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3T2M5UN5C5;
+				INFOPLIST_FILE = XcodeServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.payu.XcodeServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeServer.app/XcodeServer";
 			};
 			name = Release;
 		};
@@ -410,6 +534,15 @@
 			buildConfigurations = (
 				FE01D341216F5DA3001926E1 /* Debug */,
 				FE01D342216F5DA3001926E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEAEC3C2173B5A10083F229 /* Build configuration list for PBXNativeTarget "XcodeServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEAEC3D2173B5A10083F229 /* Debug */,
+				FEEAEC3E2173B5A10083F229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

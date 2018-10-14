@@ -7,6 +7,13 @@ target 'XcodeServer' do
 
   # Pods for XcodeServer
 
-pod 'SDWebImage', '~> 4.0'
+  def pods
+    pod 'SDWebImage', '~> 4.0'
+  end
+
+  target 'mspendTests' do
+    inherit! :search_paths
+    pods
+  end
 
 end
