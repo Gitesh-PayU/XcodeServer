@@ -16,7 +16,7 @@ platform :ios do
 # After #
 
   lane :after_integration_testflight do
-    plistFile = '#{target}/Info.plist'
+    plistFile = "#{target}/Info.plist"
     ipa_path = "#{ENV['XCS_PRODUCT']}"
     testflight(
       username: itunes_username,
