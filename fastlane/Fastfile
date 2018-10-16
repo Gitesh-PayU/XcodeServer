@@ -1,0 +1,55 @@
+
+default_platform(:ios)
+
+platform :ios do
+
+# Variables #
+
+  target = "XcodeServer"
+  plistFile = '#{target}/Info.plist'
+  itunes_username = "gitesh.agarwal@payu.in"
+  ipa_folder = "#{ENV['XCS_PRODUCT']}"
+  ipa_path = ""#{ipa_folder}#{target}.ipa"
+  build_number = ""
+  version_number = ""
+
+# Auxiliary Lanes #
+  before_all do
+    version_number = get_info_plist_value(
+      path: plistFile,
+      key: 'CFBundleShortVersionString',
+    )
+  end
+  
+  
+# After #
+
+  lane :after_integration_testflight do
+    testflight(
+      username: itunes_username,
+      ipa: ipa_path,
+      skip_submission: true,
+      skip_waiting_for_build_processing: true
+    )
+    build_number = get_info_plist_value(
+      path: plistFile,
+      key: 'CFBundleVersion',
+    )
+    version_number = get_info_plist_value(
+      path: plistFile,
+      key: 'CFBundleShortVersionString',
+    )
+    begin
+      vtag = "store.v#{version_number}.#{build_number}"
+      add_git_tag(
+        tag: vtag
+      )
+      push_git_tags
+    rescue Exception
+    end
+  end
+
+# End After #
+
+
+end
